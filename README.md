@@ -84,5 +84,8 @@ Weather data displayed for a selected city
 Country information section
 API response from /api/weather endpoint
 
+Screeshot
+https://github.com/dayosama0/web2.2/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-12-28%20234325.png
+
 Conclusion
 This project demonstrates proper backend architecture, secure API integration, and clean frontend display while following industry best practices for modern web applications.
