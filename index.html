@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather & Location</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Weather & Location</h1>
+
+      <form id="form" class="search">
+        <input
+          id="city"
+          type="text"
+          placeholder="Enter city (e.g., Astana)"
+          autocomplete="off"
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <section id="status" class="status"></section>
+
+      <section id="card" class="card hidden">
+        <h2 id="cityTitle"></h2>
+
+        <div class="grid">
+          <div class="item">
+            <span class="label">Temperature</span>
+            <span id="temp"></span>
+          </div>
+
+          <div class="item">
+            <span class="label">Feels like</span>
+            <span id="feels"></span>
+          </div>
+
+          <div class="item">
+            <span class="label">Description</span>
+            <span id="desc"></span>
+          </div>
+
+          <div class="item">
+            <span class="label">Wind speed</span>
+            <span id="wind"></span>
+          </div>
+
+          <div class="item">
+            <span class="label">Country code</span>
+            <span id="country"></span>
+          </div>
+
+          <div class="item">
+            <span class="label">Coordinates</span>
+            <span id="coords"></span>
+          </div>
+
+          <div class="item">
+            <span class="label">Rain (last 3h)</span>
+            <span id="rain"></span>
+          </div>
+        </div>
+
+        <details class="raw">
+          <summary>Show raw JSON</summary>
+          <pre id="rawJson"></pre>
+        </details>
+      </section>
+    </main>
+
+    <hr class="sep" />
+
+  <div class="country">
+    <div class="country-head">
+      <img id="flag" class="flag hidden" alt="Flag" />
+      <h3>Country info</h3>
+    </div>
+
+    <div id="countryStatus" class="small"></div>
+
+    <div class="grid" id="countryGrid">
+      <div class="item"><span class="label">Country</span><span id="cName">—</span></div>
+      <div class="item"><span class="label">Capital</span><span id="cCapital">—</span></div>
+      <div class="item"><span class="label">Region</span><span id="cRegion">—</span></div>
+      <div class="item"><span class="label">Population</span><span id="cPop">—</span></div>
+      <div class="item"><span class="label">Currency</span><span id="cCur">—</span></div>
+    </div>
+  </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
